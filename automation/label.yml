@@ -12,6 +12,10 @@ jobs:
   label:
 
     runs-on: ubuntu-latest
+    permissions:
+      contents: read-write
+      pull-requests: read-write
+      metadata: read
 
     steps:
     - uses: actions/labeler@v2
