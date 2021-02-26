@@ -23,6 +23,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+
     steps:
       - uses: actions/checkout@v2
 
@@ -43,6 +46,10 @@ jobs:
 
     runs-on: ubuntu-latest
     if: github.event_name == 'push'
+
+    permissions:
+      contents: read
+      packages: read-write
 
     steps:
       - uses: actions/checkout@v2

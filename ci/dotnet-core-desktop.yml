@@ -61,6 +61,9 @@ jobs:
       Wap_Project_Directory: your-wap-project-directory-name    # Replace with the Wap project directory relative to the solution, i.e. MyWpfApp.Package.
       Wap_Project_Path: your-wap-project-path                   # Replace with the path to your Wap project, i.e. MyWpf.App.Package\MyWpfApp.Package.wapproj.
 
+    permissions:
+      contents: read
+
     steps:
     - name: Checkout
       uses: actions/checkout@v2
