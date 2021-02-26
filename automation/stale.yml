@@ -9,6 +9,11 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    permissions:
+      issues: read-write
+      pull-requests: read-write
+      metadata: read
+
     steps:
     - uses: actions/stale@v1
       with:
