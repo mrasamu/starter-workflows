@@ -11,6 +11,10 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+      TODO: uses cache
+
     steps:
     - uses: actions/checkout@v2
 

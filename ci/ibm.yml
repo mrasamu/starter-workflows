@@ -28,6 +28,9 @@ jobs:
   setup-build-publish-deploy:
     name: Setup, Build, Publish, and Deploy
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
     steps:
 
     - name: Checkout

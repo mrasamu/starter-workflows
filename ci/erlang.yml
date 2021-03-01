@@ -15,6 +15,9 @@ jobs:
     container:
       image: erlang:22.0.7
 
+    permissions:
+      contents: read
+
     steps:
     - uses: actions/checkout@v2
     - name: Compile

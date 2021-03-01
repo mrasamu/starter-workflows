@@ -16,6 +16,8 @@ jobs:
     strategy:
       matrix:
         python-version: [3.5, 3.6, 3.7, 3.8]
+    permissions:
+      contents: read
 
     steps:
     - uses: actions/checkout@v2

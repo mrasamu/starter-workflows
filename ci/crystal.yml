@@ -11,11 +11,11 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: read
-
     container:
       image: crystallang/crystal
+
+    permissions:
+      contents: read
 
     steps:
     - uses: actions/checkout@v2

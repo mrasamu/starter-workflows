@@ -11,6 +11,8 @@ jobs:
 
     name: Build and test
     runs-on: ubuntu-latest
+    permissions:
+      TODO: uses cache
 
     steps:
     - uses: actions/checkout@v2
